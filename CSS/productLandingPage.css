@@ -1,0 +1,177 @@
+#mainImage{
+    height: 35px;
+    margin-left: -10px;
+}
+/* *{
+    margin-bottom: -10000px;
+} */
+ul{
+    list-style: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+ul li{
+    display: inline-block;
+    padding-left: 25px;
+    font-size: 20px;
+}
+#noStyle a{
+    text-decoration: none;
+    color: black;
+}
+.firstHeader{
+    text-align: center;
+    margin-top: 10px;
+}
+.getStarted{
+    margin-left: 530px;
+    margin-top: -20px;
+}
+#mail{
+    width: 255px;
+    height: 25px;
+    border: 2px double black;
+}
+#getBtn{
+    margin-top: 15px;
+    width: 265px;
+    height: 30px;
+    background-color: rgb(255, 229, 83);
+}
+.premiumMat{
+    font-size: 18px;
+    position: absolute;
+    left: 340px;
+    top: 295px;
+}
+.premiumMat h2{
+    font-size: 25px;
+}
+.fastShip{
+    font-size: 18px;
+    position: absolute;
+    left: 340px;
+    top: 400px;
+}
+.fastShip h2{
+    font-size: 25px;
+}
+.quality{
+    font-size: 18px;
+    position: absolute;
+    left: 340px;
+    top: 520px;
+}
+.quality h2{
+    font-size: 25px;
+}
+#fireicon{
+    padding-left: 205px;
+    height: 50px;
+    position: relative;
+    top: 100px;
+}
+#shipicon{
+    padding-left: 185px;
+    height: 98px;
+    position: relative;
+    top: 130px;
+}
+#quaicon{
+    padding-left: 205px;
+    height: 50px;
+    position: relative;
+    top: 180px;
+}
+iframe{
+    height: 315px;
+    width: 590px;
+    margin-top: 78px;
+    margin-left: 40px;
+}
+.troboneDiv{
+    border: 2px solid black;
+    margin-top: 100px;
+    margin-left: -130px;
+    height: 290px;
+    width: 300px;
+}
+.troboneDiv p{
+    text-align: center;
+}
+.troboneDiv2{
+    border: 2px solid black;
+    margin-top: -263px;
+    margin-left: 10px;
+    width: 300px;
+    height: 290px;
+    position: relative;
+    left: 320px;
+}
+.troboneDiv2 p{
+    text-align: center;
+}
+.troboneDiv3{
+    border: 2px solid black;
+    margin-top: -294px;
+    margin-left: 150px;
+    width: 300px;
+    height: 290px;
+    position: relative;
+    left: 500px;
+}
+.troboneDiv3 p{
+    text-align: center;
+}
+.troboneDiv3 button{
+   margin-bottom: 100px;
+}
+#trobonMerged{
+    position: absolute;
+}
+button{
+    background-color: rgb(240, 240, 14);
+    width: 100px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: -100px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.divColor{
+    display: block;
+    background-color: rgb(233, 227, 227);
+    height: 50px;
+    padding-top: 3px;
+}
+.divColor p{
+    padding-top: -30px;
+}
+.fotterLi ol{
+    list-style: none;
+}
+.fotterLi ol{
+    list-style: none;
+    margin-left: -330px;
+}
+.fotterLi ol li{
+   display: inline-block;
+   margin-left: 30px;
+}
+#createdBy{
+    margin-left: 193px;
+    margin-top: 1000px;
+}
+#copyright{
+
+   float: right;
+   left: 170px;
+   /* padding-bottom: -1200px; */
+}

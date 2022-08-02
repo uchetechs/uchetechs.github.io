@@ -1,0 +1,91 @@
+ul{
+    list-style: none;
+    margin-left: 450px;
+    margin-top: -55px;
+}
+ul li{
+    display: inline-block;
+    padding: 15px;
+}
+
+#blueBK{
+    margin-top: -15px;
+    background: lightblue;
+    height: 350px;
+}
+
+#text1{
+    padding-left: 120px;
+    padding-top: 90px;
+}
+
+h1{
+    padding-left: 120px;
+    margin-top: -15px;
+}
+
+span{
+    color: red;
+}
+
+#smallBox{
+    width: 100px;
+    height: 40px;
+    background: white;
+    margin-left: 120px;
+}
+
+#text2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#bagCircle{
+    float: right;
+    position: absolute;
+    top: 90px;
+    right: -15px;
+    border: 30px solid white;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
+
+ol{
+    list-style: none;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+ol li{
+    display: inline-block;
+    padding: 15px;
+}
+
+#bigBag{
+    height: 300px;
+    margin-top: -35px;
+    padding-right: 5px;
+    position: absolute;
+    right: -20px;
+}
+
+.grid-items{
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 100px);
+    column-gap: 270px;
+    row-gap: 150px;
+}
+
+.grid-items img{
+    width: 200px;
+    height: 200px;
+   
+}
+
+.grid-items div{
+    border: 10px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+}

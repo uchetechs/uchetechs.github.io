@@ -1,0 +1,102 @@
+body{
+    background: linear-gradient(90deg, rgb(57, 57, 194), lightblue);
+}
+h2{
+    color: rgba(44, 34, 34, 0.6);
+    padding-left: 19px;
+}
+h3{
+    padding-left: 160px;
+    color: white;
+}
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: -35px;
+    padding-right: 250px;
+    color: white;
+}
+ul li{
+    padding-left: 25px;
+}
+#getStarted{
+    float: right;
+    margin-right: 143px;
+    margin-top: -35px;
+    display: block;
+    border: 2px double rgba(244,244,244);
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.textandBtn{
+    padding-left: 160px;
+    margin-top: 158px;
+    color: white;
+}
+.pricing{
+    border-radius: 15px;
+    background: rgb(51, 238, 51);
+    height: 23px;
+    padding-top: -19px;
+    width: 100px;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+}
+.pricing p{
+    padding-top: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.loginForms{
+    position: absolute;
+    left: 670px;
+    top: 200px;
+    bottom: 300px;
+    border: 2px double rgb(253, 249, 249);
+    height: 255px;
+    width: 245px;
+    padding-left: 40px;
+    background: white;
+}
+#name{
+    background: rgb(241, 238, 238);
+    border: 2px double rgba(244,244,244);
+    width: 200px;
+    height: 20px;
+}
+#email1{
+    background: rgb(241, 238, 238);
+    border: 2px double rgba(244,244,244);
+    margin-top: 8px;
+    width: 200px;
+}
+#email2{
+    background: rgb(241, 238, 238);
+    border: 2px double rgba(244,244,244);
+    margin-top: 8px;
+    width: 200px;
+}
+#options{
+    background: rgb(241, 238, 238);
+    border: 2px double rgba(244,244,244);
+    margin-top: 8px;
+    width: 209px;
+
+}
+#loginBtn{
+    border-radius: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-left: -1px;
+    padding-top: 2px;
+    height: 29px;
+    width: 215px;
+    background: rgb(95, 95, 240);
+    border-style: none;
+    color: white;
+}

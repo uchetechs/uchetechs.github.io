@@ -1,0 +1,153 @@
+img{
+    margin-left: 320px;
+}
+
+#myDiv{
+    position: absolute;
+    top: 3px;
+    left: 710px;
+    border: 2px double rgba(244,244,244);
+    background: rgba(253,253,253);
+    margin-top: 65px;
+    padding: 20px;
+    width: 300px;
+    height: 330px;
+}
+.myDivPad{
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    color: rgb(000,000,000);
+    margin-top: -3px;
+}
+#Username{
+    width: 250px;
+    height: 30px;
+    display: block;
+    margin-bottom: -5px;
+    margin-top: 30px;
+    margin-left: 5px;
+    border: 2px double rgba(244,244,244);
+    
+}
+#Password{
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 2px double rgba(244,244,244);
+
+}
+
+#login{
+    text-align: center;
+    display: block;
+}
+#loginButton{
+   display: block;
+   background: rgba(109, 148, 255, 0.5);
+   border-radius: 3px;
+   margin-right: 20x;
+   margin-left: 5px;
+   margin-top: 20px;
+   width: 260px;
+   color: white;
+   border: none;
+   padding: 5px;
+   height: 30px;
+
+}
+
+#OR{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 12px;
+    position: relative;
+    top: -28px;
+    opacity: 0.7;
+}
+
+#hrFirst{
+    width: 100px;
+    position: relative;
+    top: 15px;
+    right: -75px;
+  
+}
+#hrSecond{
+    width: 100px;
+    position: relative;
+    left: -80px;
+    top: 5px
+}
+#forgot {
+    text-align: center;
+    display: block;
+    margin-top: -7px;
+    font-size: 12px;
+    position: relative;
+    right: -95px;
+    bottom: 140px;
+    text-decoration: none;
+    color: rgba(000,000,000,0.9);
+    
+}
+#facebook_text{
+    text-align: center;
+    padding-left: 31px;
+    padding-top: -200px;
+    color: blue;
+    margin-top: -117px;
+    position: relative;
+    top: -20px;
+    right: -50px;
+    text-decoration: none;
+}
+.accountDiv{
+    border: 2px double rgba(244,244,244);
+    background: rgba(253,253,253);
+    width: 340px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 710px;
+    margin-top: 420px;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
+}
+.accountDiv p{
+    margin-top: 0px;
+}
+#signUp{
+    text-decoration: none;
+    color: blue;
+}
+.imageFB{
+    position: absolute;
+    right: 300px;
+    top: 288px;
+    left: -235px;
+}
+.getApp{
+    position: absolute;
+    top: 517px;
+    left: 850px;
+    right: 100px;
+}
+.imageApple{
+    position: absolute;
+    width: 340px;
+    height: 40px;
+    top: 580px;
+    left: 430px;
+}
+.imageGoogle{
+    position: absolute;
+    width: 340px;
+    height: 40px;
+    top: 580px;
+    left: 570px;
+}

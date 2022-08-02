@@ -1,0 +1,63 @@
+#tinkerT{
+    color: darkorange;
+    left: 500px;
+}
+h1{
+    padding-left: 100px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+}
+li{
+    position: relative;
+    display: inline-block;
+    left: 700px;
+    bottom: 50px;
+    font-size: -40px;
+    padding-left: 25px;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+#tinker{
+    color: orange;
+}
+#HTML5{
+    color: rgb(53, 170, 224);
+}
+.tinkerText{
+    text-align: center;
+    padding-top: 70px;
+    padding-right: 90px;
+    font-size: 19px;
+    margin-bottom: -30px;
+}
+.tinkerDes{
+    text-align: center;
+    display: block;
+    padding-top: -80px;
+    font-size: 13px;
+}
+.tinkerBtn{
+    background: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+    margin-top: -20px;
+    position: relative;
+    left: 600px;
+    cursor: pointer;
+}
+.tinkerBtn p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.tinkerBtn a{
+   text-decoration: none;
+   color: black;
+}
