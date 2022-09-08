@@ -1,0 +1,312 @@
+/* All Imported fonts & navigation icons */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+@import url('https://css.gg/search.css');
+@import url('https://css.gg/home.css');
+@import url('https://css.gg/play-button-o.css');
+@import url('https://css.gg/stark.css');
+@import url('https://css.gg/align-bottom.css');
+@import url('https://css.gg/play-button-r.css');
+@import url('https://css.gg/dark-mode.css');
+
+/* Universal Selector*/
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+
+/*CSS Styles Variables*/
+:root{
+    --main-color: red;
+    --hover-color: darkblue;
+    --body-color: white;
+    --container-color: gray;
+    --text-color: black;
+}
+
+/* All Links Decoration */
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+
+/* Dark Mode */
+
+/* Main Body Styling */
+body{
+    background: var(--body-color);
+    color: var(--text-color);
+}
+
+/* Navigation Container */
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+/* Header */
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: var(--body-color);
+    z-index: 100;
+}
+
+/* Logo * searchInput */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Logo */
+.logo{
+    margin: 0 auto 0 0;
+}
+
+/* Search Box starts*/
+.search-box{
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background: rgb(102, 187, 216);
+    border-radius: 4rem;
+    margin-right: 1rem;
+}
+
+.search-box .gg{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.search-box .gg:hover{
+    color: var(--hover-color);
+}
+
+#searchInput{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background: transparent;
+    font-size: 0.938rem;
+}
+
+#searchInput::placeholder{
+    color: white;
+}
+
+/* Search Box ends*/
+
+/*admin image*/
+.admin{
+    display: flex;
+}
+
+.user-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Navigation Menu Bar Starts*/
+.navBar{
+    position: fixed;
+    transform: translate(-50%);
+    left: 35px;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--container-color);
+}
+
+.nav-links:hover,
+.active-nav{
+    color: rgb(102, 187, 216);
+    transition: 0.3s all linear;
+    transform: scale(1.2);
+}
+
+.nav-links gg{
+    font-size: 1.5rem;
+}
+
+.nav-link-title{
+    font-size: 0.7rem;
+}
+/* Navigation Menu Bar Ends */
+
+/*home section*/
+section{
+    padding: 3rem 0 2rem;
+}
+
+/* Home Section Image & Titles Starts*/
+.home{
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-top: 5rem !important;
+}
+
+.home-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.home-text{
+    padding-left: 40px;    
+}
+
+.home-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.home-text p{
+    font-size: 0.938rem;
+    margin: 10px 0 20px;
+    color: darkred;
+}
+
+/* Home Section Image & Titles ends*/
+
+
+/* watch button, description styling */
+
+.watch-btn{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    column-gap: 0.8rem;
+    color: var(--text-color);
+}
+
+.watch-btn .gg{
+    background: rgb(102, 187, 216);
+    border-radius: 20%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.watch-btn .gg:hover{
+    background: red;
+}
+
+.watch-btn span{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* movie section heading */
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(89, 183, 217);
+    padding: 8px 14px;
+    border: 1px solid rgb(61, 176, 218);
+    border-radius: 10px;
+    margin-bottom: -100px;
+}
+
+/* Responsive Layouts to hide menus*/
+@media (max-width: 1170px) {
+    .navBar{
+        display: none;
+    }
+
+    .nav-links .gg {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 1068px){
+        .container{
+            margin: 0 auto;
+            width: 95%;
+        }
+    }
+
+}
+
+/* All section Default styling */
+section {
+  margin: 0 1rem;
+  margin-top: 5rem;
+}
+
+/* movie list grid start */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  cursor: progress;
+}
+
+.movieSec {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* movie list grid end */
+
+/* footer & credits */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #2a89f4 0%, #233329 74%);
+  
+    color: white;
+    text-align: center;
+  }
+
+  /* dark mode begin */
+
+  .dark-mode {
+    background-color: var(--text-color);
+    color: var(--body-color);
+  }
+
+  .colorr {
+    background-color: black;
+    color: var(--body-color);
+  }
+
+  /* dark mode end */

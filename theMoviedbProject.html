@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Movie Database Project</title>
+    <link rel="stylesheet" href=".//CSS/theMoviedbProject.css">
+    <link href="../" rel="icon" type="image/x-icon" />
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAUAAAAIAAAACwAAAAsAAAAIAAAABQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgAAADkAAABqAAAAngAKHcUACh3HAAAAoAAAAG0AAAA9AAAADwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA4BAwg4AjTL/wI2wP8DPL//A0DA/wNAxP8CRdD/AQQIOQAAAA4AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAEU+77Aj/T/wVS1v8EY9n/BU/Q/wsrW/8MLmL/A0Th/wNX2P8Hee77AAAAAAAAAAAAAAAAAAAAAAAAAAAHMHYFBEfV/wdh2v9tvvH/GT9+/yVQjP8rWpX/LGCb/yhdmf8XTYr/BWvd/whIdgUAAAAAAAAAAAAAAAAAAAAAA1Pd/wZk3P8GfOH/Fz58/ypVkP+ps8H/s8TW/zBvqv8zda7/MnGr/xpWkv8If+T/AAAAAAAAAAAAAAAAAAAAAAZe2/8HeeD/Azmo/yRPi/8sX5n/qLXE/9fX1//Y2Nj/P5DB/z6Duf8xdrD/BVbZ/wAAAAAAAAAAAAAAAApFeDUEWtj/BXzh/wwqXP8rV5L/K2Sg/629zP/f39//39/f/+Dg4P/l5eX/QIe7/w88eP8NX3k1AAAAAAAAAAAEQXcyBGPb/wWA4v8EI1T/C0KF/xFUl/+xwtP/6Ojo/+jo6P/o6Oj/7u7u/y2AuP8MPHz/Bl94MgAAAAAAAAAAAAAAAARo3P8FhOP/A0Ci/wtEh/8UWZv/scLT/+np6f/s7Oz/ksXh/22t0/80hbv/A1PX/wAAAAAAAAAAAAAAAAAAAAAFdOH/BYHi/weP5v8KPH3/JmWh/62+zv88gbT/ZKTN/5C/3f92rtL/KW6f/wyd6P8AAAAAAAAAAAAAAAAAAAAABlR3BQV84f8zpOr/Kbrv/wxFhP8ucKv/M3u0/0eMvv9bm8f/MHCg/2nB8f/0/P0SAAAAAAAAAAAAAAAAAAAAAAAAAAAIuPL7CIfj/z2q7P9Js+3/DWnI/wgoSP8LMFD/GH3i/4zM8/9p4Pf8////BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhhdwUWnun/VLDt/2m78P99xvL/fsfy/0a37v/1/P0T////CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASankzFGp5MwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPw/AAD4HwAA4AcAAOAHAADAAwAAwAMAAMADAADAAwAAwAMAAMADAADgBwAA4AcAAPgfAAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <!--header-->
+    <header class="colorr">
+        <!--navigation-->
+        <nav class="container">
+            <!--logo-->
+            <a href=".//theMoviedbProject.html" class="logo"><img src=".//Images/Header Image/theMovieDBHeaderPic.svg" alt=""></a>
+            <!--search box-->
+            <div class="search-box">
+                <i class="gg gg-search" onClick="searhMovies()" id="btn-search"></i>
+                <input type="search" name="" id="searchInput" placeholder="Search Movies Here...">
+            </div>
+            <!--admin-->
+        <a href="#" class="admin user-img">
+            <img src=".//Images/admin Icon Image/photo_2022-08-28_18-53-26.jpg" alt="" class="user-img">
+        </a>
+        <!-- Navigation Menu Bar-->
+        <div class="navBar">
+            <a href="home" class="nav-links">
+                <i class="gg gg-home "></i>
+                <span class="nav-link-title">Home</span>
+            </a>
+            <a href="home" class="nav-links">
+                <i class="gg gg-play-button-o "></i>
+                <span class="nav-link-title">Now Playing</span>
+            </a>
+            <a href="home" class="nav-links">
+                <i class="gg gg-stark"></i>
+                <span class="nav-link-title">Upcoming</span>
+            </a>
+            <a href="home" class="nav-links">
+                <i class="gg gg-align-bottom"></i>
+                <span class="nav-link-title">Top-Rated</span>
+            </a>
+            <a href="#" class="nav-links" onclick="switchMode()">
+                <i class="gg gg-dark-mode""></i>
+                <span class="nav-link-title">Dark Mode</span>
+            </a>
+        </div>  
+        </nav>
+    </header>
+    <!--home-->
+    <section class="home container" id="home">
+     
+    <!--Home Image-->    
+        <img src=".//Images/Section Home Image/Featured Image.jfif" alt="" class="home-img">
+
+    <!--Home Text-->
+    <div class="home-text">
+        <h1 class="home-title">I am Groot</h1>
+        <p>Streaming Now</p>
+        <a href="https://www.youtube.com/watch?v=D7eFpRf4tac" target="_blank" class="watch-btn">
+            <i class="gg gg-play-button-r"></i>
+            <span>Watch Trailer Now!</span>
+        </a>
+    </div>
+    </section>
+<!--End of Home Contents-->
+
+<!--API Content Header Starts-->
+<section class="popular container" id="popular">
+    <!--heading-->
+    <div class="heading">
+        <h2>Movies</h2>
+    </div>
+</section>
+
+<!--Movie Lists-->
+<section class="movieSec container">
+    <div id="movies" class="grid"></div>
+  </section>
+
+  <!--footer-->
+  <footer>
+    <br />
+    <p>Developed by Wisdom E. Uche | Credits of API to TMDB</p>
+  </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src=".//Javascript/theMoviedbProject.js"></script>
+</body>
+</html>

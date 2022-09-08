@@ -176,7 +176,7 @@ ul li{
 }
 
 /*portfolioProject*/
-#portfolioProject{
+#movieProject{
     margin-top: -330px;
     margin-left:913px;
     height: 330px;
@@ -184,12 +184,12 @@ ul li{
     background: rgb(238,238,238);
     border-radius: 5px;
 }
-#portfolioProject img{
+#movieProject img{
    padding: 5px;
    height: 230px;
    width: 425px;
 }
-#portfolioProject p{
+#movieProject p{
    color: black;
    margin-top: -80px;
    font-size: 20px;
