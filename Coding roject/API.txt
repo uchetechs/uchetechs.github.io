@@ -1,0 +1,102 @@
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+        .bg {
+            background-color: #212529;
+            height: 100vh;
+        }
+
+        .head {
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 60px;
+        }
+
+        .container {
+            display: flex;
+            gap: 5px;
+            position: absolute;
+            top: 50%;
+            left: 38%;
+        }
+
+        .inp {
+            width: 300px;
+            outline: none;
+            font-family: 'Bespoke Sans', sans-serif;
+        }
+
+        .btn {
+            background-color: #1c7ed6;
+            color: #fff;
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            outline: 0;
+            border: 0;
+            font-family: 'Bespoke Sans', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: #4dabf7;
+            color: #ffffff;
+        }
+
+        .output {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 60%;
+            left: 43.5%;
+            font-family: 'Roboto', sans-serif;
+            color: #f1f3f5;
+        }
+
+        .weatherIcon {
+            display: flex;
+        }
+
+        .weatherName {
+            margin: 40px 0 0 0;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <h1 class="head">Weather App</h1>
+    <main class="container">
+        <input type="text" placeholder="Enter Location" id="inputLocation" class="inp">
+        <button type="button" id="submitBtn" class="btn">Search</button>
+    </main>
+    <aside class="output">
+        <p id="weatherName" class="weatherName"></p>
+        <p id="weatherIcon" class="weatherIcon"></p>
+    </aside>
+
+    <script>
+        const btn = document.getElementById('submitBtn');
+        const getWeatherCondition = (e) => {
+            const inputLocation = document.getElementById('inputLocation').value;
+            const myKey = '536f1ad6784a90540f6254aa46517c48';
+            const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${inputLocation}&units=imperial&appid=${myKey}`;
+            const imageUrl = 'http://openweathermap.org/img/wn/';
+            const weatherIcon = document.getElementById('weatherIcon')
+            const weatherName = document.getElementById('weatherName')
+
+            fetch(endpoint)
+                .then(response => response.json())
+                .then(json =>   {
+                    const imgView = imageUrl + json.weather[0].icon + '.png';
+                    const value = json.main.temp;
+                    const degree = Math.floor(value)
+                    weatherIcon.innerHTML = `<img src='${imgView}'> <h1>${degree}°</h1>`;
+                    weatherName.innerText = `${inputLocation}: ${json.weather[0].main}`;
+                    console.log(json)
+                })
+        }
+        btn.onclick = (e) => getWeatherCondition(e)
+    </script>
+</body>
